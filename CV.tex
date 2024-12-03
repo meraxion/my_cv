@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+% Custom commands
+\newcommand{\cvsection}[1]{
+    \vspace{1.0em}  % Add space before section
+    \par\textbf{\large #1}\smallskip\hrule
+    \vspace{0.3em}  % Add consistent space after the rule
+}
+
+\newcommand{\entry}[4]{
+    \par\textbf{#1} \hfill #2\\
+    \textit{#3}\\
+    #4\medskip
+}
+
+% Adjust spacing
+\setlength{\parskip}{0.5em}
+\setlength{\columnsep}{1cm}
+
+\begin{document}
+
+% Header (full width)
+\begin{center}
+    \huge\textbf{STIAN GRØNLUND}\\[0.3em]
+    \normalsize
+    +47 48127094\\
+    \href{mailto:stian.sgronlund@outlook.com}{email} · 
+    \href{https://bsky.app/profile/meraxion.bsky.social}{bluesky} · 
+    \href{https://github.com/meraxion/}{github} · 
+    \href{https://noixarem.no}{Website} · 
+    \href{https://linkedin.com/in/sgronlund}{LinkedIn}
+
+\end{center}
+
+\medskip
+\par\textit{I am building quantitative skills to help avert future catastrophes brought on by transformative artificial intelligence, focused on fundamental, technical solutions to the alignment problem.}
+
+% Two-column content
+\begin{multicols}{2}
+\RaggedRight  % Better text distribution in narrow columns
+
+% Left column content
+\cvsection{INTERESTS}
+\textbf{Personal Interests}: Rationality, Effective Altruism, Bayesian Statistics, Computational Complexity, Predictive Processing, Foundations of Mathematics, Functional Programming.\\
+\textbf{Research Interests}: Cooperative AI, Safeguarded AI, Agent Foundations.\\
+
+\cvsection{PROJECTS}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Implementation of Hamiltonian Monte Carlo, in Python with JAX
+  \item Conjugate Gradient Descent for a binary classification problem
+  \item Iterative improvement and simulated annealing for combinatoric optimization in Ising Models
+  \item Linear Quadratic Gaussian Control on a stochastic double integrator
+  \item Constructing and testing a DAG of Heart Disease data and isolating the causal effects of variables of interest, using covariate adjustment
+\end{itemize}
+
+
+\cvsection{EDUCATION}
+\entry{2024-09 -- PRESENT}{}{AI: Cognitive Computing Master}{
+  \textbf{Radboud University Nijmegen}\\
+  In the first semester of my Master I have achieved consistent high achievement in courses on Machine Learning, Causal Inference, Dynamical Systems, and more. I have implemented several algorithms in Python, and done statistical modelling in R.
+}
+
+\entry{2023-09 -- 2024-07}{}{AI: Cognitive Computing, Pre-Master}{
+    \textbf{Radboud University Nijmegen}\\
+    A 1-year course to prepare transferring students for the AI master at Radboud. Courses taken: Intro to Formal Reasoning, Calculus, Programming, AI: Principles \& Techniques, and Theoretical Modelling for Cognitive Science.
+}
+
+\entry{2021-09 -- 2022-08}{}{Performance Psychology, MSc}{
+    \textbf{Edinburgh University}\\
+    Carried out a qualitative research study on the decision-making processes of expert forecasters.
+}
+
+
+\columnbreak
+
+% Right column content
+\cvsection{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Programming}: Python, JAX, R, Git
+  \item \textbf{ML}: Perceptron Learning, Monte Carlo
+  \item Hamiltonian Monte Carlo, Bayesian Statistics
+  \item Causal Inference, Bayesian Networks \& \\Structural Equation Modeling
+  \item Dynamical Systems, Numerical Integration
+\end{itemize}
+
+\cvsection{SKILLS}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*,nosep]
+    \item Independent
+    \item Motivated
+    \item Group coordination
+    \item Events planning
+    \item English, Norwegian, basic Mandarin Chinese
+\end{itemize}
+\end{multicols}
+
+
+\cvsection{WORK}
+\entry{2024-09-01 -- Present}{}{Teaching Assistant, AI: Principles \& Techniques}{
+  \textbf{Radboud University Nijmegen}\\
+  Helping students understand and implement classical AI material and algorithms like computational complexity, game search, constraint satisfaction, and variable elimination in Bayesian Nets.
+}
+
+\entry{2022-12-01 -- 2023-06-01}{}{Communications Lead EAGxNordics 2023}{
+    \textbf{Effective Altruism Norway}\\
+    Work as comms lead included audience outreach and attendee communication, copywriting, managing our event networking app, and Slack event workspace, for this 500-person event.
+}
+
+\cvsection{EXPERIENCE}
+\entry{2023-10 -- PRESENT}{}{Organiser, EA Nijmegen}{
+  \textbf{Effective Altruism Nijmegen}\\
+  In the past year I have been organizing various activities with EA Nijmegen, starting with a locally run version of the AGI Safety Fundamentals Course in Winter 23/24, and an Intro Course Programme for Fall 24. These courses involve guiding discussion groups for 4-8 attendees, focusing on global pressing issues like animal welfare, global poverty, and risks from advanced technologies. 
+}
+\end{multicols}
+\end{document}
